@@ -1,0 +1,35 @@
+{% if site.services %}
+  <div class="table-responsive">
+    <table class="table table-sm table-borderless">
+      <tbody>
+        {% assign custom_order = "Reviewer,Reviewer (External),Assistant Organizer,Member" | split: "," %}
+        
+        {% for current_role in custom_order %}
+          
+          {% assign role_items = site.services | where: "role", current_role | sort: "year" | reverse %}
+          
+          {% if role_items.size > 0 %}
+            {% for service in role_items %}
+              <tr>
+                <th scope="row" style="width: 25%; font-weight: bold; color: var(--global-text-color);">
+                  {% if forloop.first %}{{ current_role }}{% endif %}
+                </th>
+                <td>
+                  <strong>{{ service.year }}</strong> &middot; 
+                  {% if service.link %}
+                     <a href="{{ service.link }}" target="_blank">{{ service.title }}</a>
+                  {% else %}
+                    {{ service.title }}
+                  {% endif %}
+                </td>
+              </tr>
+            {% endfor %}
+          {% endif %}
+          
+        {% endfor %}
+      </tbody>
+    </table>
+  </div>
+{% else %}
+  <p>No service records available yet.</p>
+{% endif %}
