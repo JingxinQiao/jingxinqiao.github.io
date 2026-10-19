@@ -448,6 +448,16 @@ ninja.data = [{
           description: "",
           section: "Services",handler: () => {
               window.location.href = "/services/2026-esorics/";
+            },},{id: "services-acns",
+          title: 'ACNS',
+          description: "",
+          section: "Services",handler: () => {
+              window.location.href = "/services/2027-acns/";
+            },},{id: "services-pkc",
+          title: 'PKC',
+          description: "",
+          section: "Services",handler: () => {
+              window.location.href = "/services/2027-pkc/";
             },},{id: "services-scottish-collective-intelligent-community-scic-for-civtech",
           title: 'Scottish Collective Intelligent Community (SCIC) for CivTech',
           description: "",
