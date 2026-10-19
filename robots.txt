@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://jingxinqiao.github.io/sitemap.xml
