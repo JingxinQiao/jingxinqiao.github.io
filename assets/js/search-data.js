@@ -467,7 +467,17 @@ ninja.data = [{
           title: 'Blockchain and Distributed Ledger (INFR11144)',
           description: "",
           section: "Teachings",handler: () => {
+              window.location.href = "/teachings/blockchain-and-distributed-ledger-2026/";
+            },},{id: "teachings-blockchain-and-distributed-ledger-infr11144",
+          title: 'Blockchain and Distributed Ledger (INFR11144)',
+          description: "",
+          section: "Teachings",handler: () => {
               window.location.href = "/teachings/blockchain-and-distributed-ledger/";
+            },},{id: "teachings-computer-security-level-11-infr11244",
+          title: 'Computer Security (Level 11) (INFR11244)',
+          description: "",
+          section: "Teachings",handler: () => {
+              window.location.href = "/teachings/computer-security-2026/";
             },},{id: "teachings-computer-security-level-11-infr11244",
           title: 'Computer Security (Level 11) (INFR11244)',
           description: "",
